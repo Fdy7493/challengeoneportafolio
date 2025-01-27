@@ -1,0 +1,192 @@
+/* Este repositório base fué creado para ayudarte en caso que no sepas como comenzar, recuerda que el portafolio es tu carta de presentación y debes darle tu cara, por eso te invitamos a personalizarlo según tu estilo y preferencias no te limites apenas al layout propuesto en figma  
+*/
+:root {
+    --color-de-fondo: blueviolet;
+    --color-de-fondo-menu:blueviolet;
+    --color-de-link: black;
+}
+
+body {
+    background-color: rgb(215, 165, 248);
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    line-height: 1.6;
+}
+.presentacion__foto {
+    width: 300px;
+    height: 300px;
+    object-fit: cover; /* Ajusta el contenido para llenar el área sin deformar */
+    border-radius: 50%; /* Para una forma circular */
+  }
+  
+
+ol, ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-de-link);
+}
+
+/* ------------------------------ Sección Menú -------------------------------*/
+.cabecera {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--color-de-fondo-menu);
+}
+
+.cabecera__logo {
+    max-width: 80px; /* Ajuste para pantallas pequeñas */
+}
+
+.cabecera__titulo {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.navegacion__lista {
+    display: none;
+}
+
+.navegacion__elemento a {
+    font-size: 0.9rem;
+}
+.formacion__icono{
+    width: 100px;
+    height: 100px;
+    object-fit: cover; /* Ajusta el contenido para llenar el área sin deformar */
+    border-radius: 10%; /* Para una forma circular */
+}
+/* ------------------------------ Sección Presentación ------------------------------*/
+
+
+/* ------------------------------ Sección sobre mí ----------------------------------*/
+
+
+/*------------------------------ Sección de Habilidades ------------------------------*/
+
+
+/*------------------------------ Sección de Aficiones --------------------------------*/
+
+
+/*------------------------------ Sección de Proyectos --------------------------------*/
+
+
+/*------------------------------ Sección de Contacto ---------------------------------*/
+
+
+/* ------------------------------ Responsividad ---------------------------------------*/
+
+/* Tablets y pantallas más grandes */
+@media (min-width: 768px) {
+    .cabecera {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cabecera__logo {
+        max-width: 100px;
+    }
+
+    .cabecera__titulo {
+        font-size: 1.5rem;
+    }
+
+    .navegacion__lista {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-top: 0;
+    }
+
+    .navegacion__elemento a {
+        font-size: 1rem;
+    }
+}
+
+/* Pantallas grandes */
+@media (min-width: 1024px) {
+    /* Aquí puedes ajustar aún más el diseño para pantallas grandes */
+    .cabecera__titulo {
+        font-size: 1.8rem;
+    }
+
+    .navegacion__elemento a {
+        font-size: 1.1rem;
+    }
+}
+.contacto {
+    margin: 2rem auto;
+    max-width: 600px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.contacto__titulo {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.contacto__formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contacto__campo {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.contacto__campo:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.contacto__boton {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contacto__boton:hover {
+    background-color: #0056b3;
+}
+
+.contacto__whatsapp {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    color: #333;
+}
+
+.contacto__whatsapp-boton {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    background-color: #25d366;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.contacto__whatsapp-boton:hover {
+    background-color: #1da851;
+}
+
